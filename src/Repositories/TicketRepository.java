@@ -15,9 +15,12 @@ public class TicketRepository {
             previousTicketID = previousTicketID+1;
             ticket.setId(previousTicketID);
             ticketMap.put(previousTicketID,ticket);
+        }else {
+            // Check if the ticket exists and update
+            if(ticketMap.containsKey(ticket.getId())){
+                ticketMap.put(ticket.getId(), ticket);
+            }
         }
-        // else update the existing object
-
         return ticket;
     }
 }

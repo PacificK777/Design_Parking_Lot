@@ -35,7 +35,5 @@ public class Client {
         IssueTicketResponseDTO responseDTO = ticketController.issueTicket(requestDTO);
 
         Ticket ticket = responseDTO.getTicket();
-
-
     }
 }
