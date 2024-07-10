@@ -3,18 +3,18 @@ package Models;
 import java.util.Date;
 
 public class Ticket extends BaseModel{
-    private int number;
+    private String number;
     private Vehicle vehicle;
     private Date entryTime;
     private ParkingSpot parkingSpot;
     private Gate generatedAt;
     private Operator generatedBy;
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

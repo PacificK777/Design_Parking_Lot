@@ -2,7 +2,7 @@ package Models;
 
 public class Vehicle extends BaseModel{
     private String vehicleNumber;
-    private String ownerNumber;
+    private String ownerName;
     private VehicleType vehicleType;
 
     public String getVehicleNumber() {
@@ -14,11 +14,11 @@ public class Vehicle extends BaseModel{
     }
 
     public String getOwnerNumber() {
-        return ownerNumber;
+        return ownerName;
     }
 
-    public void setOwnerNumber(String ownerNumber) {
-        this.ownerNumber = ownerNumber;
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
     }
 
     public VehicleType getVehicleType() {
